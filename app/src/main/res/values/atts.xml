@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="title" format="string"/>
+    <attr name="titleSize" format="dimension"/>
+    <attr name="titleColor" format="color"/>
+    <attr name="textViewBackground" format="reference|color"/>
+
+     <declare-styleable name="CustomTextView">
+         <attr name="title" />
+         <attr name="titleSize"/>
+         <attr name="titleColor"/>
+         <attr name="textViewBackground"/>
+     </declare-styleable>
+</resources>
