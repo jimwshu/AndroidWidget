@@ -56,11 +56,15 @@ public class HttpClientHelper {
             } else {
                 is = conn.getInputStream();
                 //获取is的可读字节数，也就是总大小
-                int available = is.available();
+                result = StreamHelper.toString(is);
+
+/*
+     这个available发生了什么？todo
+int available = is.available();
 
                 if (available > 0) {
                     result = StreamHelper.toString(is);
-                }
+                }*/
                 is.close();
             }
 

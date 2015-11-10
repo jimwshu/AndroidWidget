@@ -8,6 +8,10 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
+/**
+ * AsyncTask<String,Void,Pair<Integer,String>> 第一个参数，传入的参数类型是String类型的url，也可以通过params[0]获得。
+ * 第二个是传参过程中的记录中间过程，第三个是返回的result
+ */
 abstract public class HttpAsyncTask extends AsyncTask<String,Void,Pair<Integer,String>> {
 
     protected JSONObject _response =null;
