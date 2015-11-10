@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/xlistview_footer_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="1dip"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/xlistview_footer_hint_textview"
+            android:textColor="?listitem_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/xlistview_footer_hint_normal"
+            android:textSize="@dimen/content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xlistview_footer_no_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="没有跟多内容"
+        android:textColor="@color/content"
+        android:textSize="@dimen/content"
+        android:visibility="gone" />
+
+</LinearLayout>

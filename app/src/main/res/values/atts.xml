@@ -12,4 +12,20 @@
          <attr name="titleColor"/>
          <attr name="textViewBackground"/>
      </declare-styleable>
+    
+    <attr name="xlistview_header_arrow" format="reference"/>
+    <attr name="xlistview_progress" format="reference" />
+    <attr name="listitem_footer" format="reference|color"/>
+
+    <attr name="xlistview" format="reference"/>
+
+    <declare-styleable name="XListView">
+        <!-- pull down refresh enable -->
+        <attr name="xlvRefreshEnable" format="boolean" />
+        <!-- pull up load more enable -->
+        <attr name="xlvLoadEnable" format="boolean" />
+        <!-- an empty view to be -->
+        <attr name="xlvHeaderPlaceHolderEnable" format="boolean"/>
+    </declare-styleable>
+
 </resources>

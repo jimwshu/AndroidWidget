@@ -67,13 +67,11 @@ public class CustomTextView extends View {
         // mPaint.setColor(mTitleTextColor);
         mBound = new Rect();
         mPaint.getTextBounds(title, 0, title.length(), mBound);
-        Log.e("custom","1111");
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 title = randomText();
-                Log.e(TAG, title);
                 requestLayout();
                 postInvalidate();
             }
@@ -101,7 +99,6 @@ public class CustomTextView extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        Log.e(TAG, "ON MEASURE");
 
 
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
@@ -143,14 +140,12 @@ public class CustomTextView extends View {
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        Log.e(TAG, "ON onLayout");
 
         super.onLayout(changed, left, top, right, bottom);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        Log.e(TAG, "ON onDraw");
 
         j++;
         if (j == 3) {

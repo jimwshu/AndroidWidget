@@ -6,13 +6,6 @@
                >
 
 
-    <com.example.androidwidget.androidwidget.CustomView.MyScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/my_scroll_view"
-        />
-
-
     <com.example.androidwidget.androidwidget.CustomView.CustomTextView
         android:layout_width="200dp"
         android:layout_height="100dp"
@@ -22,7 +15,15 @@
         widget:textViewBackground="#ff0000"
         android:id="@+id/custom_text_view"
         />
+    <com.example.androidwidget.androidwidget.CustomView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_scroll_view"
+        >
 
+
+
+    </com.example.androidwidget.androidwidget.CustomView.MyScrollView>
 
 
 </LinearLayout>

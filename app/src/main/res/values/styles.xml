@@ -5,4 +5,50 @@
         <!-- Customize your theme here. -->
     </style>
 
+
+    <style name="day" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="xlistview_header_arrow">@style/night_head_arrow</item>
+        <item name="xlistview_progress">@style/head_progress</item>
+        <item name="listitem_footer">#cccccc</item>
+        <item name="xlistview">@style/day_xlistview</item>
+    </style>
+
+    <style name="night">
+        <item name="xlistview_header_arrow">@style/head_arrow</item>
+        <item name="xlistview_progress">@style/night_head_progress</item>
+        <item name="listitem_footer">#6a6c7e</item>
+        <item name="xlistview">@style/night_xlistview</item>
+
+    </style>
+    
+    
+    <style name="night_head_arrow">
+        <item name="android:src">@mipmap/xlistview_arrow_night</item>
+    </style>
+
+    <style name="head_arrow">
+        <item name="android:src">@mipmap/xlistview_arrow</item>
+    </style>
+
+    <style name="head_progress">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="night_head_progress">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+
+    <style name="day_xlistview">
+        <item name="android:divider">#ededed</item>
+        <item name="android:dividerHeight">@dimen/g_divider_medium</item>
+        <item name="android:scrollbarThumbVertical">@mipmap/wb_scrollbar</item>
+    </style>
+
+    <style name="night_xlistview">
+        <item name="android:divider">#16181b</item>
+        <item name="android:dividerHeight">@dimen/g_divider_medium</item>
+        <item name="android:scrollbarThumbVertical">@mipmap/wb_scrollbar_night</item>
+    </style>
+
 </resources>
