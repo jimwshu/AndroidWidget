@@ -59,6 +59,22 @@ public class HttpClientHelper {
                 result = StreamHelper.toString(is);
 
 /*
+
+ 关于InputStream类的available()方法
+    要一次读取多个字节时，经常用到InputStream.available()方法，这个方法可以在读写操作前先得知数据流里有多少个字节可以读取。需要注意的是，如果这个方法用在从本
+地文件读取数据时，一般不会遇到问题，但如果是用于网络操作，就经常会遇到一些麻烦。比如，Socket通讯时，对方明明发来了1000个字节，但是自己的程序调用available()方法却只得到900，或者100，甚至是0，感觉有点莫名其妙，怎么也找不到原因。其实，这是因为网络通讯往往是间断性的，一串字节往往分几批进行发送。本地程序调用available()方法有时得到0，这可能是对方还没有响应，也可能是对方已经响应了，但是数据还没有送达本地。对方发送了1000个字节给你，也许分成3批到达，这你就要调用3次available()方法才能将数据总数全部得到。
+      如果这样写代码：
+  int count = in.available();
+  byte[] b = new byte[count];
+  in.read(b);
+      在进行网络操作时往往出错，因为你调用available()方法时，对发发送的数据可能还没有到达，你得到的count是0。
+         需要改成这样：
+  int count = 0;
+  while (count == 0) {
+   count = in.available();
+  }
+  byte[] b = new byte[count];
+  in.read(b);
      这个available发生了什么？todo
 int available = is.available();
 
