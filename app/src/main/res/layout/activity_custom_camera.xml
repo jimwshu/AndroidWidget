@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                tools:context="com.example.androidwidget.androidwidget.CustomCameraActivity">
+
+
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="capture"
+        android:onClick="capture"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/capture_surfaceview"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="welcome"
+            android:textColor="#ff0000"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

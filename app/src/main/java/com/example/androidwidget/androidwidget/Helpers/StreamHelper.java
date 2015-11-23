@@ -1,9 +1,11 @@
 package com.example.androidwidget.androidwidget.Helpers;
 
+import android.os.Environment;
 import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
@@ -41,4 +43,27 @@ public class StreamHelper {
         return in_nocode;
     }
 
+    public static String getSDPath() {
+
+        String sdPath = "";
+        File sdDir = null;
+        boolean sdCardExist = isExternalStorageAvailable();
+        if (sdCardExist) {
+            sdDir = Environment.getExternalStorageDirectory();
+            sdPath = sdDir.toString();
+        }
+        return sdPath;
+    }
+
+    /**
+     * 外部储存卡是否可用
+     * @return
+     */
+    public static boolean isExternalStorageAvailable() {
+        try{
+            return Environment.MEDIA_MOUNTED.equalsIgnoreCase(Environment.getExternalStorageState());
+        } catch (Exception e){
+        }
+        return false;
+    }
 }
