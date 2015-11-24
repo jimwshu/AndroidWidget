@@ -82,4 +82,11 @@ public class MainActivity extends ActionBarActivity implements MyScrollView.MySc
         startActivity(intent);
     }
 
+    public void gotoColor(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, PrimaryColorActivity.class);
+        startActivity(intent);
+    }
+
+
 }
