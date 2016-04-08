@@ -48,6 +48,11 @@
             android:name=".ImagePickerActivity"
             android:label="@string/title_activity_image_picker" >
         </activity>
+
+        <activity
+                android:name=".TextViewActionAnimationActivity"
+                android:label="@string/title_activity_image_picker" >
+        </activity>
         <activity
             android:name=".CustomView.GestureLockViewGroup"
             android:label="@string/title_activity_gesture_lock_view_group" >

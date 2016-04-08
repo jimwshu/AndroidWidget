@@ -5,12 +5,25 @@
 
     <TextView
             android:id="@+id/topic_intro"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:paddingTop="5dp"
             android:ellipsize="end"
             android:textSize="14dp"
+            android:text="我是第三方士大夫士大夫收到撒范德萨发生的发生大事发生的发生的地方撒发送到发送到发生的法师打发深大第三方士大夫士大夫第三方撒旦飞洒地方第三方撒旦飞洒地方深大"
             android:textColor="#000000"/>
+
+    <RelativeLayout
+            android:id="@+id/topic_intro_more"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/topic_intro">
+        <ImageView
+                android:id="@+id/topic_des_more_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/textview_action"/>
+    </RelativeLayout>
 
 </RelativeLayout>

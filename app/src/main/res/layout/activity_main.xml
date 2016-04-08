@@ -8,7 +8,9 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone"
+    >
 
 
 
@@ -54,6 +56,14 @@
         android:textColor="#ff0000"
         android:onClick="gotoCapture"
         />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去textview动画"
+            android:textColor="#ff0000"
+            android:onClick="gotoTextView"
+    />
 
     <com.example.androidwidget.androidwidget.CustomView.CustomTextView
         android:layout_width="200dp"

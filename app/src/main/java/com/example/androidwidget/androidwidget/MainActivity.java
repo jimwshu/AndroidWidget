@@ -113,6 +113,10 @@ public class MainActivity extends ActionBarActivity implements MyScrollView.MySc
         startActivity(intent);
     }
 
-
+    public void gotoTextView(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, TextViewActionAnimationActivity.class);
+        startActivity(intent);
+    }
 
 }
