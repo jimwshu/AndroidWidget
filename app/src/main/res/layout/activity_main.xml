@@ -5,6 +5,40 @@
               android:orientation="vertical"
                >
 
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.example.androidwidget.androidwidget.SurfaceViewTemplate
+            android:id="@+id/pan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_media_pause"
+            />
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去坐标矩阵"
+        android:textColor="#ff0000"
+        android:onClick="gotoMatrix"
+        />
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

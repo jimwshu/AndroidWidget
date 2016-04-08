@@ -10,4 +10,6 @@
     <string name="xlistview_footer_hint_fail">加载失败，请重试</string>
     <string name="title_activity_custom_camera">CustomCameraActivity</string>
     <string name="title_activity_primary_color">PrimaryColorActivity</string>
+    <string name="title_activity_image_picker">ImagePickerActivity</string>
+    <string name="title_activity_gesture_lock_view_group">GestureLockViewGroup</string>
 </resources>

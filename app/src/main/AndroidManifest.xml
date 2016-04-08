@@ -40,6 +40,18 @@
             android:name=".PrimaryColorActivity"
             android:label="@string/title_activity_primary_color" >
         </activity>
+        <activity
+            android:name=".ImageXYChange"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ImagePickerActivity"
+            android:label="@string/title_activity_image_picker" >
+        </activity>
+        <activity
+            android:name=".CustomView.GestureLockViewGroup"
+            android:label="@string/title_activity_gesture_lock_view_group" >
+        </activity>
     </application>
 
 </manifest>

@@ -12,6 +12,15 @@ import android.graphics.Paint;
  */
 public class ImageHelper {
 
+    /**
+     * ColorMatrix是一个5x4阶的矩阵 在下面表示为A,第一行表示R红色分量,第二行表示G绿色分量,第三行表示B蓝色分量,第四行表示透明度:
+     * @param bitmap
+     * @param hue
+     * @param saturation
+     * @param lum
+     * @return
+     */
+
     public static Bitmap handleImageEffect(Bitmap bitmap, float hue, float saturation, float lum) {
         Bitmap bmp = Bitmap.createBitmap(bitmap.getWidth(),bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bmp);

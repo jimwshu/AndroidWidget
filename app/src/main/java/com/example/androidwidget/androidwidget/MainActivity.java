@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.androidwidget.androidwidget.CustomView.CustomTextView;
@@ -23,6 +24,9 @@ public class MainActivity extends ActionBarActivity implements MyScrollView.MySc
     private CustomTextView customTextView;
     private MyScrollView myScrollView;
     private ImageView captureImageview;
+
+    private ImageView startButton;
+    private SurfaceViewTemplate pan;
 
     private String filePath;
     @Override
@@ -58,6 +62,21 @@ public class MainActivity extends ActionBarActivity implements MyScrollView.MySc
             }
         }
 
+        pan = (SurfaceViewTemplate) findViewById(R.id.pan);
+        startButton = (ImageView) findViewById(R.id.startButton);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!pan.isStart()) {
+                    pan.panStart(0);
+                } else {
+                    if ( !pan.isShouleEnd()) {
+                        pan.panEnd();
+                    }
+                }
+            }
+        });
+
     }
 
     @Override
@@ -87,6 +106,13 @@ public class MainActivity extends ActionBarActivity implements MyScrollView.MySc
         intent.setClass(MainActivity.this, PrimaryColorActivity.class);
         startActivity(intent);
     }
+
+    public void gotoMatrix(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, ImageXYChange.class);
+        startActivity(intent);
+    }
+
 
 
 }

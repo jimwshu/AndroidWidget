@@ -1,13 +1,18 @@
+// 声明是Android程序
 apply plugin: 'com.android.application'
 
 android {
+    // 编译SDK的版本
     compileSdkVersion 23
+    // build tools的版本 --》 通过Android SDK 看这个是不是装了tools，没装就要下载或者该版本
     buildToolsVersion "23.0.0"
 
     defaultConfig {
+        // 应用的包名
         applicationId "com.example.androidwidget.androidwidget"
         minSdkVersion 15
         targetSdkVersion 23
+        //版本号  --》 低版本只能卸载重装高版本，高版本直接升级
         versionCode 1
         versionName "1.0"
     }
@@ -17,10 +22,34 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+ /*   buildTypes {
+        debug {
+            // debug模式
+        }
+
+        release {
+            // 是否进行混淆
+            minifyEnabled false
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }*/
+
+
+    // 移除lint检查的error
+    /*lintOptions {
+        abortOnError false
+    }*/
 }
 
 dependencies {
+    // 编译libs目录下的所有jar包
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    // 编译的V7包等
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile 'com.google.android.gms:play-services:7.8.0'
+
+    // 编译extras目录下的ShimmerAndroid模块,多模块时要加上
+    //compile project(':extras:ShimmerAndroid')
 }
