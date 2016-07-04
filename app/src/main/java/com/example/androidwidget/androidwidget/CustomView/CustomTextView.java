@@ -135,6 +135,9 @@ public class CustomTextView extends View {
                 height = desired;
                 break;
         }
+        /**
+         * 设置自身的宽高。。。，参数是宽高,而不是widthMeasureSpec
+         */
         setMeasuredDimension(width, height);
     }
 

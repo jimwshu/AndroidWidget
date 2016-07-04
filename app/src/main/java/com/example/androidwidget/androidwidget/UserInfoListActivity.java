@@ -53,7 +53,7 @@ public class UserInfoListActivity extends Activity implements XListView.IXListVi
     private int currentPage = PAGE;
 
     private boolean hasMore = true;
-    public static String user_url = "http://192.168.1.105:8080/iszt-demo-mybatis/app/user/listPageUser?page=%1$d&rows=20";
+    public static String user_url = "http://192.168.1.105:8080/iszt-demo-mybatis/0/user/listPageUser?page=%1$d&rows=20";
     public static String user_url_2 = "http://172.16.0.94:8080/iszt-demo-mybatis/app/user/listPageUser?page=%1$d&rows=20";
     //public static String user_url_2 = "http://172.16.0.94:8080/iszt-demo-mybatis/app/registration/postParams";
 

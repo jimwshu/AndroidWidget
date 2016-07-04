@@ -1,4 +1,4 @@
-// 声明是Android程序
+// 声明是Android程序，也有可能是library
 apply plugin: 'com.android.application'
 
 android {

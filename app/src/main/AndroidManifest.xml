@@ -53,10 +53,18 @@
                 android:name=".TextViewActionAnimationActivity"
                 android:label="@string/title_activity_image_picker" >
         </activity>
+
         <activity
-            android:name=".CustomView.GestureLockViewGroup"
-            android:label="@string/title_activity_gesture_lock_view_group" >
+                android:name=".RefreshViewPagerActivity"
+                android:label="@string/hello_world" >
         </activity>
+        <activity
+                android:name=".AtActivity"
+                android:label="@string/hello_world"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+
+
     </application>
 
 </manifest>
