@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.androidwidget.androidwidget.VerticalLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher"
+                    android:id="@+id/rel_1"
+    >
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+        />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher"
+                    android:id="@+id/rel_2"
+
+    >
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher"
+                    android:id="@+id/rel_3"
+
+    >
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello_world"
+
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher"
+                    android:id="@+id/rel_4"
+
+    >
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n好时节"
+
+        />
+
+    </RelativeLayout>
+
+
+
+</com.example.androidwidget.androidwidget.VerticalLinearLayout>

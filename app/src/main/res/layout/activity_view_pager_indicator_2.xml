@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:auto="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.example.androidwidget.androidwidget.ViewPagerIndicator
+            android:background="@mipmap/my_content_pass_icon_night"
+            android:id="@+id/view_pager_indicator"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            auto:visible_table_count="4"
+            android:layout_height="45dp">
+
+    </com.example.androidwidget.androidwidget.ViewPagerIndicator>
+
+    <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/view_pager"
+    >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

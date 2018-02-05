@@ -51,4 +51,10 @@
         <attr name="tryTimes" />
     </declare-styleable>
 
+
+    <attr name="visible_table_count" format="integer"></attr>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="visible_table_count"/>
+    </declare-styleable>
+
 </resources>

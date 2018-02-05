@@ -125,4 +125,10 @@ public class MainActivity extends ActionBarActivity implements MyScrollView.MySc
         startActivity(intent);
     }
 
+    public void gotoFragment(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, IndicatorActivity.class);
+        startActivity(intent);
+    }
+
 }

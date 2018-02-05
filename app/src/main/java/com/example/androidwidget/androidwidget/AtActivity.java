@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.widget.EditText;
+
+import com.example.androidwidget.androidwidget.CustomView.OnListener;
 
 /**
  * Created by wangshu on 16/6/12.
@@ -61,8 +64,9 @@ public class AtActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_at_info);
         setContentView(R.layout.activity_at_info);
-        mEditText = (EditText) findViewById(R.id.content);
+       /* mEditText = (EditText) findViewById(R.id.content);
         mEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -80,6 +84,15 @@ public class AtActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 Log.e(TAG, "String:" + s.toString());
             }
-        });
+        });*/
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        boolean b = super.onTouchEvent(event);
+
+        Log.e("tag:", "activity ontouch " + b);
+
+        return b;
     }
 }

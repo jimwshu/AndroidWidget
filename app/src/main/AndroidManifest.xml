@@ -64,6 +64,12 @@
                 android:windowSoftInputMode="adjustUnspecified|stateHidden">
         </activity>
 
+        <activity
+                android:name=".IndicatorActivity"
+                android:label="@string/hello_world"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+
 
     </application>
 
